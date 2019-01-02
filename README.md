@@ -1,7 +1,8 @@
 # Front-End
+some tips and tricks for front-end development
 
-If styling is your reason for using a <div> button, here’s some common
-reset CSS so you can put that argument to rest: 
+### THE ``<DIV>`` BUTTON
+If styling is your reason for using a <div> button, here’s some common reset CSS so you can put that argument to rest: 
 
 ``` CSS
 button {

@@ -1,6 +1,5 @@
-# Optimized Event Listeners
+# Optimized Event Listener for resize using requestAnimationFrame
 
-```javascript
 (function () {
     var throttle = function (type, name, obj) {
         obj = obj || window;
@@ -26,4 +25,4 @@
 window.addEventListener("optimizedResize", function () {
 
 });
-```
+

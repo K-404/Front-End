@@ -1,0 +1,43 @@
+//css with the cointainer, touch indicator and animation
+
+.fortouchhand {
+    position: relative;
+}
+
+.touchhand {
+    width: 35px;
+    height: 35px;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-image: url("/assets/images/tap.svg");
+    position: absolute;
+    animation-name: slideIt;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transition: all 0.2s ease-in-out;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: inline-block;
+
+    &.hidden {
+        display: none;
+    }
+}
+
+@keyframes slideIt {
+    0% {
+        transform: translateX(0);
+        opacity: 0.4;
+    }
+
+    50% {
+        transform: translateX(-20px);
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 0.4;
+    }
+}
